@@ -1,10 +1,10 @@
 import Phaser from "phaser";
 import { useEffect, useState } from "react";
 //Importando escenas
-import Game from "../Escenas/Game.jsx";
-import GameOver from "../Escenas/GameOver.jsx";
-import Congratulations from "../Escenas/Congratulations";
-import GameStart from "../Escenas/GameStart.jsx";
+import Game from "./Escenas/Game.jsx";
+import GameOver from "./Escenas/GameOver.jsx";
+import Congratulations from "./Escenas/Congratulations.jsx";
+import GameStart from "./Escenas/GameStart.jsx";
 
 
 function App() {

@@ -48,7 +48,7 @@ class Game extends (React.Component, Phaser.Scene) {
 
         this.bloques = this.physics.add.staticGroup({
             key: ['bloque1', 'bloque2', 'bloque3', 'bloque4'],
-            frameQuantity: 10,
+            frameQuantity: 1,
             gridAlign: {
                 width: 10,
                 height: 4,
@@ -59,10 +59,12 @@ class Game extends (React.Component, Phaser.Scene) {
             }
         });
 
+        //PALETA
         this.paleta = this.physics.add.image(400,450, 'paleta').setImmovable();
         this.paleta.body.allowGravity = false;
         this.paleta.setCollideWorldBounds(true);
 
+        //PELOTA
         this.bola = this.physics.add.image(400, 420, 'bola');
         this.bola.setCollideWorldBounds(true);
         this.bola.setData('bolaPegada', true);

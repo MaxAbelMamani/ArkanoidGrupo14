@@ -1,5 +1,5 @@
 import React from 'react';
-import { BotonReiniciar } from '../Funciones/BotonReiniciar';
+import { BotonReiniciar } from '../Clases/BotonReiniciar.js';
 import victory from '../assets/sprites/victory.png'
 
 class Congratulations extends (React.Component, Phaser.Scene) {

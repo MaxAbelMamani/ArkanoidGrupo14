@@ -1,3 +1,4 @@
+//IMportando imagen de boton play
 import iniciar from '../assets/sprites/play.png'
 
 export class BotonIniciar {
