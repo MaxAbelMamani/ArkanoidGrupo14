@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Imoportando clase boton iniciar
-import { BotonIniciar } from '../Clases/BotonIniciar.js';
+import { BotonIniciar } from '../Components/BotonIniciar.jsx';
 
 //IMportando Imagenes
 import background from '../assets/sprites/background.png'
@@ -21,7 +21,9 @@ class GameStart extends (React.Component, Phaser.Scene){
 
     create(){
         this.add.image(400,240,'background');
-        this.botonIniciar.create();
+        this.botonIniciar.create('nivel1', 200,300);
+        this.botonIniciar.create('nivel2', 400,300);
+        this.botonIniciar.create('nivel3', 600,300);
         this.add.image(400,160, 'gameName');
     }
 }

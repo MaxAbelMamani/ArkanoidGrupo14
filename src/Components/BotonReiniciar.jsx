@@ -6,13 +6,13 @@ export class BotonReiniciar {
     }
 
     preload(){
-        this.escenaRelacionada.load.image('boton', reiniciar);
+        this.escenaRelacionada.load.image('botonReiniciar', reiniciar);
     }
 
     create(){
-        this.botonReiniciar = this.escenaRelacionada.add.image(400, 350, 'boton').setInteractive();
+        this.botonReiniciar = this.escenaRelacionada.add.image(400, 350, 'botonReiniciar').setInteractive();
         this.botonReiniciar.on('pointerdown', ()=>{
-            this.escenaRelacionada.scene.start('game');
+            this.escenaRelacionada.scene.start('nivel1');
         });
     }
 }

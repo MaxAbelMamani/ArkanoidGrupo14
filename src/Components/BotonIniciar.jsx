@@ -7,13 +7,13 @@ export class BotonIniciar {
     }
 
     preload(){
-        this.escenaRelacionada.load.image('boton', iniciar);
+        this.escenaRelacionada.load.image('botonIniciar', iniciar);
     }
 
-    create(){
-        this.botonIniciar = this.escenaRelacionada.add.image(400, 350, 'boton').setInteractive();
+    create(nivel, posX, posY){
+        this.botonIniciar = this.escenaRelacionada.add.image(posX, posY, 'botonIniciar').setInteractive();
         this.botonIniciar.on('pointerdown', ()=>{
-            this.escenaRelacionada.scene.start('game');
+            this.escenaRelacionada.scene.start(nivel);
         });
     }
 }
