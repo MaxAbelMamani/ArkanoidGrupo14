@@ -1,5 +1,5 @@
 import React from 'react';
-import { BotonReiniciar } from '../Clases/BotonReiniciar.js';
+import { BotonReiniciar } from '../Components/BotonReiniciar.jsx';
 import gameOver from '../assets/sprites/gameOver.png'
 
 class GameOver extends (React.Component, Phaser.Scene) {
