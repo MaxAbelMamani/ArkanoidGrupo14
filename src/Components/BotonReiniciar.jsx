@@ -1,4 +1,4 @@
-import reiniciar from '../assets/sprites/restart.png'
+import reiniciar from '../assets/sprites/boton-de-reiniciar.png'
 
 export class BotonReiniciar {
     constructor(escena){

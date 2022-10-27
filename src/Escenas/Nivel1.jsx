@@ -2,7 +2,7 @@ import React from 'react'
 import Phaser from 'phaser'
 
 //IMportando Imagenes
-import background from '../assets/sprites/background.png'
+import background from '../assets/sprites/background.jpg'
 
 //IMportando Funciones
 import marcadorGame from '../Components/marcadorGame.jsx'

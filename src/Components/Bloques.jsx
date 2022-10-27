@@ -26,7 +26,7 @@ class Bloques {
                         width: 10,
                         height: 4,
                         cellWidth: 67,
-                        cellHeight: 34,
+                        cellHeight: 44,
                         x: 112,
                         y: 100
                     }
@@ -40,7 +40,7 @@ class Bloques {
                         width: 10,
                         height: 4,
                         cellWidth: 67,
-                        cellHeight: 34,
+                        cellHeight: 44,
                         x: 112,
                         y: 100
                     }
@@ -54,7 +54,7 @@ class Bloques {
                         width: 10,
                         height: 4,
                         cellWidth: 67,
-                        cellHeight: 34,
+                        cellHeight: 44,
                         x: 112,
                         y: 100
                     }
