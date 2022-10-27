@@ -11,14 +11,17 @@ function App() {
   const [listo, setListo] = useState(false);
     useEffect(()=>{
         //ancho del juego
-        const width = 800;
-        //alto del juego
-        const height = 480;
+        //const width = 800;
+        ////alto del juego
+        //const height = 480;
 
         const config = {
             type: Phaser.AUTO,
-            width: width,
-            height: height,
+            scale:{
+                autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+                width: 800,
+                height:480
+            },
             physics: {
                 default: "arcade",
                 arcade: {

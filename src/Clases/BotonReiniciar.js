@@ -10,7 +10,7 @@ export class BotonReiniciar {
     }
 
     create(){
-        this.botonReiniciar = this.escenaRelacionada.add.image(400, 230, 'boton').setInteractive();
+        this.botonReiniciar = this.escenaRelacionada.add.image(400, 350, 'boton').setInteractive();
         this.botonReiniciar.on('pointerdown', ()=>{
             this.escenaRelacionada.scene.start('game');
         });

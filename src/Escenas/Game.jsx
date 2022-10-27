@@ -48,7 +48,7 @@ class Game extends (React.Component, Phaser.Scene) {
 
         this.bloques = this.physics.add.staticGroup({
             key: ['bloque1', 'bloque2', 'bloque3', 'bloque4'],
-            frameQuantity: 1,
+            frameQuantity: 10,
             gridAlign: {
                 width: 10,
                 height: 4,

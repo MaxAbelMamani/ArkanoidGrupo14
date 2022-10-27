@@ -11,7 +11,7 @@ export class BotonIniciar {
     }
 
     create(){
-        this.botonIniciar = this.escenaRelacionada.add.image(400, 230, 'boton').setInteractive();
+        this.botonIniciar = this.escenaRelacionada.add.image(400, 350, 'boton').setInteractive();
         this.botonIniciar.on('pointerdown', ()=>{
             this.escenaRelacionada.scene.start('game');
         });
