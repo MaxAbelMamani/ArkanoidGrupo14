@@ -4,7 +4,7 @@ import React from 'react';
 import { BotonIniciar } from '../Components/BotonIniciar.jsx';
 
 //IMportando Imagenes
-import background from '../assets/sprites/background.png'
+import background from '../assets/sprites/background.jpg'
 import gameName from '../assets/sprites/gameName.png'
 
 class GameStart extends (React.Component, Phaser.Scene){

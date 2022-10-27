@@ -1,5 +1,6 @@
 import React from 'react';
 import { BotonReiniciar } from '../Components/BotonReiniciar.jsx';
+import backgrondWin from '../assets/sprites/background-win.jpg'
 import victory from '../assets/sprites/victory.png'
 
 class Congratulations extends (React.Component, Phaser.Scene) {
@@ -9,12 +10,13 @@ class Congratulations extends (React.Component, Phaser.Scene) {
     }
 
     preload(){
+        this.load.image('backgroundWin', backgrondWin);
         this.load.image('victory',victory);
         this.botonReiniciar.preload();
     }
 
     create(){
-        this.add.image(400,240,'background');
+        this.add.image(400,240,'backgroundWin');
         this.botonReiniciar.create();
         this.victoryImage = this.add.image(400,160, 'victory');
     }

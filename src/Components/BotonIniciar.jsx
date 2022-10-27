@@ -1,5 +1,5 @@
 //IMportando imagen de boton play
-import iniciar from '../assets/sprites/play.png'
+import iniciar from '../assets/sprites/boton-de-play.png'
 
 export class BotonIniciar {
     constructor(escena){
