@@ -1,6 +1,6 @@
 import reiniciar from '../assets/sprites/boton-de-reiniciar.png'
 
-export class BotonReiniciar {
+class BotonReiniciar {
     constructor(escena){
         this.escenaRelacionada = escena;
     }
@@ -10,9 +10,12 @@ export class BotonReiniciar {
     }
 
     create(){
-        this.botonReiniciar = this.escenaRelacionada.add.image(400, 350, 'botonReiniciar').setInteractive();
+        this.botonReiniciar = this.escenaRelacionada.add.image(350, 400, 'botonReiniciar').setInteractive();
+        this.botonReiniciar.setScale(0.1);
         this.botonReiniciar.on('pointerdown', ()=>{
             this.escenaRelacionada.scene.start('nivel1');
         });
     }
 }
+
+export default BotonReiniciar;

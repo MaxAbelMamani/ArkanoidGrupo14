@@ -1,10 +1,10 @@
 import React from 'react'
 import Phaser from 'phaser'
 
-//IMportando Imagenes
+//Importando Imagenes
 import background from '../assets/sprites/background.jpg'
 
-//IMportando Funciones
+//Importando componentes
 import marcadorGame from '../Components/marcadorGame.jsx'
 import vidasGame from '../Components/vidasGame.jsx'
 import Bloques from '../Components/Bloques.jsx'
@@ -42,7 +42,6 @@ class Nivel1 extends (React.Component, Phaser.Scene) {
         this.bloques.crearBloques(this.nivel);
         this.paleta.crearPaleta();
         this.bola.crearBola();
-
         //Gestiona las las coliciones entre la bola y la paleta
         this.physics.add.collider(this.bola.pelotaGame, this.paleta.paletaPlayer, this.colisionBolaPaleta, null, this);
         //Gestiona las las coliciones entre la bola y los bloques
@@ -94,7 +93,6 @@ class Nivel1 extends (React.Component, Phaser.Scene) {
         }
 
         if (this.bola.pelotaGame.y > 480) {
-            console.log('fin');
             this.vida.decrementarVida(1);
             this.bola.pelotaGame.x = this.paleta.paletaPlayer.x;
             this.bola.pelotaGame.y = this.paleta.paletaPlayer.y - 40;

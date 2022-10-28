@@ -92,7 +92,6 @@ class Nivel3 extends (React.Component, Phaser.Scene) {
         }
 
         if (this.bola.pelotaGame.y > 480) {
-            console.log('fin');
             this.vida.decrementarVida(1);
             this.bola.pelotaGame.x = this.paleta.paletaPlayer.x;
             this.bola.pelotaGame.y = this.paleta.paletaPlayer.y - 40;
