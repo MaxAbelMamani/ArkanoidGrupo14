@@ -7,8 +7,8 @@ class marcadorGame{
     create(){
         this.puntajeTexto = this.escenaRelacionada.add.text(16, 16, 'PUNTOS: 0', {
             fontSize: '20px',
-            fill: '#fill',
-            fontFamily: 'verdana, ararial, sans-serif'
+            fill: '#FFF',
+            fontFamily: 'verdana, ararial, sans-serif',
         });
     }
 
