@@ -15,5 +15,6 @@ export class BotonIniciar {
         this.botonIniciar.on('pointerdown', ()=>{
             this.escenaRelacionada.scene.start(nivel);
         });
+        this.botonIniciar.setScale(0.7);
     }
 }

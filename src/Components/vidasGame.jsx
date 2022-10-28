@@ -7,7 +7,7 @@ class vidasGame{
     create(){
         this.vidaTexto = this.escenaRelacionada.add.text(650, 16, 'VIDAS: 3', {
             fontSize: '20px',
-            fill: '#fill',
+            fill: '#FFF',
             fontFamily: 'verdana, ararial, sans-serif'
         });
     }
