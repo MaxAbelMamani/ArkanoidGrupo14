@@ -15,6 +15,7 @@ class BotonReiniciar {
         this.botonReiniciar.on('pointerdown', ()=>{
             this.escenaRelacionada.scene.start('nivel1');
         });
+        this.botonReiniciar.setScale(0.7);
     }
 }
 
