@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Imoportando clase boton iniciar
-import { BotonIniciar } from '../Components/BotonIniciar.jsx';
+import BotonIniciar from '../Components/BotonIniciar.jsx';
 
 //IMportando Imagenes
 import background from '../assets/sprites/background.jpg'

@@ -21,7 +21,7 @@ class Bloques {
             case 1:
                 this.conjuntoBloques = this.escenaRelacionada.physics.add.staticGroup({
                     key: ['bloque1'],
-                    frameQuantity: 1,
+                    frameQuantity: 10,
                     gridAlign: {
                         width: 10,
                         height: 4,
