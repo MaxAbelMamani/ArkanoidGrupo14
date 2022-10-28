@@ -10,6 +10,8 @@ import vidasGame from '../Components/vidasGame.jsx'
 import Bloques from '../Components/Bloques.jsx'
 import Paleta from '../Components/Paleta.jsx'
 import Bola from '../Components/Bola.jsx'
+import BotonVolver from '../Components/BotonVolver.jsx';
+
 
 class Nivel2 extends (React.Component, Phaser.Scene) {
     constructor(){
@@ -23,6 +25,7 @@ class Nivel2 extends (React.Component, Phaser.Scene) {
         this.bloques = new Bloques(this);
         this.paleta = new Paleta(this);
         this.bola = new Bola(this);
+        this.botonVolver = new BotonVolver(this);
     }
 
     preload(){
@@ -30,6 +33,7 @@ class Nivel2 extends (React.Component, Phaser.Scene) {
         this.paleta.preload();
         this.bola.preload();
         this.bloques.preload();
+        this.botonVolver.preload();
     }
 
     create(){
@@ -42,6 +46,7 @@ class Nivel2 extends (React.Component, Phaser.Scene) {
         this.bloques.crearBloques(this.nivel);
         this.paleta.crearPaleta();
         this.bola.crearBola();
+        this.botonVolver.create(750, 550);
 
         this.physics.add.collider(this.bola.pelotaGame, this.paleta.paletaPlayer, this.colisionBolaPaleta, null, this);
         this.physics.add.collider(this.bola.pelotaGame, this.bloques.conjuntoBloques, this.colisionBolaBloque, null, this);
@@ -51,7 +56,7 @@ class Nivel2 extends (React.Component, Phaser.Scene) {
     }
 
     crearFondo(){
-        this.add.image(400,240,'background');
+        this.add.image(400,300,'background');
     }
 
     colisionBolaBloque(bola, bloque){
@@ -91,7 +96,7 @@ class Nivel2 extends (React.Component, Phaser.Scene) {
             }
         }
 
-        if (this.bola.pelotaGame.y > 480) {
+        if (this.bola.pelotaGame.y > 600) {
             this.vida.decrementarVida(1);
             this.bola.pelotaGame.x = this.paleta.paletaPlayer.x;
             this.bola.pelotaGame.y = this.paleta.paletaPlayer.y - 40;
@@ -106,7 +111,7 @@ class Nivel2 extends (React.Component, Phaser.Scene) {
 
         if (this.cursors.space.isDown && this.precionarTeclaEspacio) {
             this.precionarTeclaEspacio = false;
-            this.bola.pelotaGame.setVelocity(-75,-300);
+            this.bola.pelotaGame.setVelocity(-90,-400);
             this.bola.pelotaGame.setData('bolaPegada', false);
         }
     }

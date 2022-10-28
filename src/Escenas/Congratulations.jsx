@@ -21,7 +21,7 @@ class Congratulations extends (React.Component, Phaser.Scene) {
     }
 
     create(){
-        this.add.image(400,240,'backgroundWin');
+        this.add.image(400,300,'backgroundWin');
         this.botonReiniciar.create();
         this.botonVolver.create(450, 400);
         this.victoryImage = this.add.image(400,160, 'victory');

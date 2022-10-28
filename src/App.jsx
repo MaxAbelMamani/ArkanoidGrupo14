@@ -17,7 +17,7 @@ function App() {
             scale:{
                 autoCenter: Phaser.Scale.CENTER_BOTH,
                 width: 800,
-                height:480
+                height:600
             }
         }
 

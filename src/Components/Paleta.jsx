@@ -11,7 +11,7 @@ class Paleta {
     }
 
     crearPaleta(){
-        this.paletaPlayer = this.escenaRelacionada.physics.add.image(400,450, 'paleta').setImmovable();
+        this.paletaPlayer = this.escenaRelacionada.physics.add.image(400,580, 'paleta').setImmovable();
         this.paletaPlayer.body.allowGravity = false;
         this.paletaPlayer.setCollideWorldBounds(true);
     }

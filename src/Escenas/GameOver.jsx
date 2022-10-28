@@ -21,7 +21,7 @@ class GameOver extends (React.Component, Phaser.Scene) {
     }
 
     create(){
-        this.add.image(400,240,'backgroundLost');
+        this.add.image(400,300,'backgroundLost');
         this.botonReiniciar.create();
         this.botonVolver.create(450, 400);
         this.gameOverImage = this.add.image(400,160, 'gameOver');
