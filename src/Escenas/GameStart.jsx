@@ -27,7 +27,7 @@ class GameStart extends (React.Component, Phaser.Scene){
 
     create(){
         
-        this.add.image(400,240,'background');
+        this.add.image(400,300,'background');
         this.botonIniciar.create('nivel1', 200,300);
         this.botonIniciar.create('nivel2', 400,300);
         this.botonIniciar.create('nivel3', 600,300);

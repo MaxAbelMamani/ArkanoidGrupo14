@@ -11,7 +11,7 @@ class Bola {
     }
 
     crearBola(){
-        this.pelotaGame = this.escenaRelacionada.physics.add.image(400, 420, 'bola');
+        this.pelotaGame = this.escenaRelacionada.physics.add.image(400, 550, 'bola');
         this.pelotaGame.setCollideWorldBounds(true);
         this.pelotaGame.setData('bolaPegada', true);
         this.pelotaGame.setBounce(1);
