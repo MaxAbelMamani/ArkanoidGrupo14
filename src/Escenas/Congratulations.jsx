@@ -5,6 +5,7 @@ import BotonVolver from '../Components/BotonVolver.jsx';
 
 import backgrondWin from '../assets/sprites/background-win.png'
 import victory from '../assets/sprites/victory.png'
+import winSound from '../assets/sounds/wingame.wav'
 
 class Congratulations extends (React.Component, Phaser.Scene) {
     constructor(){
@@ -16,6 +17,7 @@ class Congratulations extends (React.Component, Phaser.Scene) {
     preload(){
         this.load.image('backgroundWin', backgrondWin);
         this.load.image('victory',victory);
+        this.load.audio('winSound', winSound);
         this.botonReiniciar.preload();
         this.botonVolver.preload();
     }
@@ -25,6 +27,8 @@ class Congratulations extends (React.Component, Phaser.Scene) {
         this.botonReiniciar.create();
         this.botonVolver.create(450, 400);
         this.victoryImage = this.add.image(400,160, 'victory');
+        this.winSound = this.sound.add('winSound');
+        this.winSound.play();
     }
 }
 

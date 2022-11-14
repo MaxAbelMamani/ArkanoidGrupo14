@@ -5,6 +5,7 @@ import BotonVolver from '../Components/BotonVolver.jsx';
 
 import gameOver from '../assets/sprites/gameOver.png'
 import backgrondLost from '../assets/sprites/background-lost.jpg'
+import gameOverSound from '../assets/sounds/gameOver.mp3'
 
 class GameOver extends (React.Component, Phaser.Scene) {
     constructor(){
@@ -16,6 +17,7 @@ class GameOver extends (React.Component, Phaser.Scene) {
     preload(){
         this.load.image('backgroundLost', backgrondLost);
         this.load.image('gameOver',gameOver);
+        this.load.audio('gameOverSound', gameOverSound);
         this.botonReiniciar.preload();
         this.botonVolver.preload();
     }
@@ -25,6 +27,8 @@ class GameOver extends (React.Component, Phaser.Scene) {
         this.botonReiniciar.create();
         this.botonVolver.create(450, 400);
         this.gameOverImage = this.add.image(400,160, 'gameOver');
+        this.gameOverSound = this.sound.add('gameOverSound');
+        this.gameOverSound.play();
     }
 }
 
