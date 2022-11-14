@@ -5,7 +5,7 @@ class vidasGame{
     }
 
     create(){
-        this.vidaTexto = this.escenaRelacionada.add.text(650, 16, 'VIDAS: 3', {
+        this.vidaTexto = this.escenaRelacionada.add.text(720, 16, 'VIDAS: 3', {
             fontSize: '20px',
             fill: '#fff',
             fontFamily: 'Impact, fantasy'
